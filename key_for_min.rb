@@ -8,11 +8,7 @@ def key_for_min_value(name_hash)
 
 lowest_key = name_hash.default
 min_value = Float::INFINITY
-#case name_hash
 
-#when name_hash.empty?
-  #lowest_key
-#else  
   name_hash.each_pair do |key, value|
     if value < min_value
       min_value = value
